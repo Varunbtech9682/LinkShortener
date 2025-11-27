@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS links (
+  id SERIAL PRIMARY KEY,
+  code VARCHAR(8) NOT NULL UNIQUE,
+  target_url TEXT NOT NULL,
+  click_count INTEGER NOT NULL DEFAULT 0,
+  last_clicked_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_links_code ON links (code);

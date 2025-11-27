@@ -9,7 +9,7 @@ TinyLink is a minimal URL shortener web app inspired by bit.ly. It supports:
 - Viewing stats for a single code at `/code/:code`
 - Health check endpoint at `/healthz`
 
-This implementation follows the specification from the TinyLink take-home assignment.
+![Link Shortener](preview.png)
 
 ## Tech Stack
 
